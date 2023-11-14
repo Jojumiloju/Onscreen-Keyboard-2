@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Screen Keyboard</title>
+    <link rel="stylesheet" href="screenKeyboard.css">
+</head>
+<body>
+    <div id="textArea"><h1 id="textBox"></h1></div><br><br>
+    <div id="Keyboard">
+        <div id="kbrdLine1">
+            <button onclick="letter('q')">q</button>
+            <button onclick="letter('w')">w</button>
+            <button onclick="letter('e')">e</button>
+            <button onclick="letter('r')">r</button>
+            <button onclick="letter('t')">t</button>
+            <button onclick="letter('y')">y</button>
+            <button onclick="letter('u')">u</button>
+            <button onclick="letter('i')">i</button>
+            <button onclick="letter('o')">o</button>
+            <button onclick="letter('p')">p</button>
+        </div>
+        <div id="KbrdLine2">
+            <button onclick="letter('a')">a</button>
+            <button onclick="letter('s')">s</button>
+            <button onclick="letter('d')">d</button>
+            <button onclick="letter('f')">f</button>
+            <button onclick="letter('g')">g</button>
+            <button onclick="letter('h')">h</button>
+            <button onclick="letter('j')">j</button>
+            <button onclick="letter('k')">k</button>
+            <button onclick="letter('l')">l</button>
+        </div>
+        <div id="kbrdLine3">
+            <button onclick="letter('z')">z</button>
+            <button onclick="letter('x')">x</button>
+            <button onclick="letter('c')">c</button>
+            <button onclick="letter('v')">v</button>
+            <button onclick="letter('b')">b</button>
+            <button onclick="letter('n')">n</button>
+            <button onclick="letter('m')">m</button>
+            <button onclick="letter(',')">,</button>
+            <button onclick="letter('.')">.</button>
+            <button onclick="backspace()">Backspace</button>
+        </div>
+        <div id="kbrdLine4">
+            <button onclick="space()"></button>
+        </div>
+    </div>
+    <script>
+        var text = "";
+        document.getElementById('textBox').innerHTML = text;
+        function letter(x){
+                text = text + x
+                document.getElementById('textBox').innerHTML = text;
+        }
+        function backspace(){
+                let editedText = text.slice(0,-1)
+                text = editedText
+                document.getElementById('textBox').innerHTML = editedText;
+        }
+        function space(){
+            text = text + " "
+            document.getElementById('textBox').innerHTML = text;
+        }
+    </script>
+</body>
+</html>

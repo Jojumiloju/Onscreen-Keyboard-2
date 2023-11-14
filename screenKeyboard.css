@@ -1,0 +1,33 @@
+#textArea{
+   border: solid;
+   padding-left: 20px;
+   border-radius: 10px;
+   margin-left: 200px;
+   width: 65%;
+   color: whitesmoke;
+}
+
+body{
+   background-color: dimgray;
+}
+
+#Keyboard{
+   display: flex;
+   width: 70%;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-left: 180px;
+   gap: 5px;
+}
+
+#Keyboard button{
+   padding: 30px;
+   border-radius: 10px;
+   font-size: 20px;
+   background-color: silver;
+   color: white;
+}
+
+#kbrdLine4 button{
+   width: 400px;
+}

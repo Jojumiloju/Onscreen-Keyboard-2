@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO JAVASCRIPT CLASS</title>
+    <link rel="stylesheet" href="style.css">
+    <style src="index.js"></style>
+
+</head>
+<body>
+    <h1 align="center">WELCOME TO YOUR FIRST JAVASCRIPT CLASS</h1>
+    <p>The magic is about to begin!</p>
+    <input id="nameInput" type="text" placeholder="Enter your name"><br><br>
+    <button onclick="greetuser()">Say Hello!</button>
+    <h1 id="screen"></h1>
+
+    <script>
+        // var, let, const
+        var username = "Jomiloju Olubosi"
+
+        //event listener {using attributes}
+
+        function greetuser(){
+            let user = document.getElementById('nameInput').value;
+            // innerText, innerHTML
+            document.getElementById('screen').innerText = `Hello, ${user}`;
+            // alert("Hello" + user)
+        }
+
+        // DOM (document object model)
+    </script>
+</body>
+</html>
